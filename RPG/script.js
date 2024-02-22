@@ -104,6 +104,10 @@ function goCave() {
   update(locations[2]);
 }
 
+function easterEgg() {
+  update(locations[7]);
+}
+
 function buyHealth() {
   if (gold >= 10) {
     gold -= 10;
@@ -186,10 +190,10 @@ function attack() {
     } else {
       defeatMonster();
     }
-}
-if (Math.random() <= .1 && inventory.length !== 1) {
-    text.innerText += " Your " + inventory.pop() + " breaks.";
-    currentWeapon--
+  }
+    if (Math.random() <= .1 && inventory.length !== 1) {
+        text.innerText += " Your " + inventory.pop() + " breaks.";
+        currentWeapon--
   }
 }
 function getMonsterAttackValue (level)
